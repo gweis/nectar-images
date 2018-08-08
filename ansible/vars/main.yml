@@ -1,8 +1,11 @@
 ---
 perform_upgrade: True
-organisation_name: Nectar
-support_url: https://support.ehelp.edu.au/support/solutions/articles/6000106269
+organisation_name: Ecocloud
+support_url: https://support.ecocloud.org.au
 
 facts:
   - organisation_name
   - support_url
+  - kernel_version
+  - os_version
+

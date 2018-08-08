@@ -4,3 +4,4 @@
     src: testing/
     dest: /usr/nectar
     mode: 0755
+  when: nectar_test_build is defined

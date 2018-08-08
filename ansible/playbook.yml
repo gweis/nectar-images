@@ -7,10 +7,11 @@
     - vars/main.yml
 
   roles:
+    # TODO: can we do this on CentOS as well? (remove NetworkManager and use systemd?)
     - role: systemd-networkd
       when: (ansible_distribution == 'Ubuntu' and ansible_distribution_major_version >= '17') or
             (ansible_distribution == 'Fedora' and ansible_distribution_version >= '28')
-    - role: testing
+    # - role: testing
     - role: repos
     - role: cloud
     - role: qemu-guest-agent
